@@ -1,0 +1,21 @@
+                                   OVERVIEW                                    
+Memory                              Used               Total        Percent Used
+--------------------------------------------------------------------------------
+DATA_RAM                           50744               65536              77.43%
+HWA_RAM                            65536               65536             100.00%
+L3_RAM                            393216              393216             100.00%
+PROG_RAM                          118431              130816              90.53%
+VECTORS                               60                 256              23.44%
+
+
+                            Type           DATA_RAM      HWA_RAM       L3_RAM     PROG_RAM      VECTORS
+--------------------------------------------------------------------------------
+(.cinit..l3ram.load)        unknown               0            0            0            8            0
+APP                         code              11788            0            0        58214           60
+APP                         heap              34816            0       393216            0            0
+APP                         hw_mem                0        65536            0            0            0
+BIOS                        code                  4            0            0        17210            0
+COMPONENTS_CORE             code               2088            0            0        28294            0
+COMPONENTS_OPTIONAL         code                848            0            0        13374            0
+linker-generated            linker             1200            0            0          169            0
+linker-generated            unknown               0            0            0         1162            0

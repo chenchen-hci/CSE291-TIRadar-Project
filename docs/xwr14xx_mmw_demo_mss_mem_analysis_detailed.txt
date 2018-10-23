@@ -1,0 +1,32 @@
+                                   OVERVIEW                                    
+Memory                              Used               Total        Percent Used
+--------------------------------------------------------------------------------
+DATA_RAM                           50744               65536              77.43%
+HWA_RAM                            65536               65536             100.00%
+L3_RAM                            393216              393216             100.00%
+PROG_RAM                          118431              130816              90.53%
+VECTORS                               60                 256              23.44%
+
+
+                            Type           DATA_RAM      HWA_RAM       L3_RAM     PROG_RAM      VECTORS
+--------------------------------------------------------------------------------
+(.cinit..l3ram.load)        unknown               0            0            0            8            0
+APP                         code                  0            0            0        35576           60
+APP                         data              11004            0            0         1984            0
+APP                         heap              34816            0       393216            0            0
+APP                         hw_mem                0        65536            0            0            0
+BIOS                        code                  0            0            0        16426            0
+BIOS                        data                  4            0            0            0            0
+BIOS_OSAL                   code                  0            0            0          784            0
+C_RUNTIME                   code                  0            0            0        19749            0
+C_RUNTIME                   data                784            0            0          905            0
+DRIVERS_CORE                code                  0            0            0        15076            0
+DRIVERS_CORE                data                876            0            0          100            0
+DRIVERS_OPTIONAL            code                  0            0            0        13334            0
+DRIVERS_OPTIONAL            data                848            0            0           40            0
+MMWAVE                      code                  0            0            0         5850            0
+MMWAVE                      data                216            0            0            0            0
+MMWAVELINK                  code                  0            0            0         6452            0
+MMWAVELINK                  data                996            0            0          816            0
+linker-generated            linker             1200            0            0          169            0
+linker-generated            unknown               0            0            0         1162            0
