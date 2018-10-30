@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?ccsproject version="1.0"?>
+<projectOptions>
+	<ccsVersion value="7.4.0"/>
+	<deviceVariant value="Cortex R.IWR1443"/>
+	<deviceFamily value="TMS470"/>
+	<deviceEndianness value="little"/>
+	<codegenToolVersion value="16.9.6.LTS"/>
+	<isElfFormat value="true"/>
+	<linkerCommandFile value="mss_gesture_swipe_linker.cmd"/>
+	<rts value="libc.a"/>
+	<createSlaveProjects value=""/>
+	<templateProperties value="id=gesture_swipe_14xx_mss.projectspec.gesture_swipe_14xx_mss,type=rtsc,products=com.ti.rtsc.SYSBIOS:6.53.02.00;com.ti.MMWAVE_SDK:1.2.0.05;,xdcToolsVersion=3.50.04.43_core,target=ti.targets.arm.elf.R4F,platform=ti.platforms.cortexR:IWR14XX:false:200,endianness=little,output_format=elf,buildProfile=release,"/>
+	<origin value="D:\mmwave_industrial_toolbox_2_5_2\labs\lab0010-gesture-recog-swipe\src\gesture_swipe_14xx_mss.projectspec"/>
+	<filesToOpen value=""/>
+	<isTargetManual value="false"/>
+</projectOptions>
