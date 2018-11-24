@@ -1,0 +1,14 @@
+{
+  "1": {
+    "data": {
+        "port": "/dev/ttyACM1",
+        "baudrate": 921600,
+        "timeout" : 0.3
+    },
+    "uart": {
+        "port": "/dev/ttyACM0",
+        "baudrate": 115200,
+        "timeout" : 0
+    }
+  }
+}
