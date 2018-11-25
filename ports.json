@@ -1,12 +1,24 @@
 {
   "1": {
     "data": {
-        "port": "/dev/ttyACM1",
+        "port": "COM3",
         "baudrate": 921600,
         "timeout" : 0.3
     },
     "uart": {
-        "port": "/dev/ttyACM0",
+        "port": "COM4",
+        "baudrate": 115200,
+        "timeout" : 0
+    }
+  },
+  "2": {
+    "data": {
+        "port": "COM16",
+        "baudrate": 921600,
+        "timeout" : 0.3
+    },
+    "uart": {
+        "port": "COM15",
         "baudrate": 115200,
         "timeout" : 0
     }

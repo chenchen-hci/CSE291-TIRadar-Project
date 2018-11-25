@@ -7,6 +7,7 @@ import time
 import threading
 import json
 from pprint import pprint
+import struct
 
 class Collector (threading.Thread):
 
@@ -61,7 +62,8 @@ class Collector (threading.Thread):
         bytesize = len(bytes)
         i = 0
         while i < bytesize:
-            floatarray.append(bytes[i] | bytes[i + 1] << 8 | bytes[i + 2] << 16 | bytes[i + 3] << 24)
+            var = bytes[i] | bytes[i + 1] << 8 | bytes[i + 2] << 16 | bytes[i + 3] << 24
+            floatarray.append(struct.unpack('<f', struct.pack('I', var))[0])
             i += 4
         return np.array(floatarray, dtype = np.float64)  # 96 numbers
 
@@ -102,7 +104,7 @@ class Collector (threading.Thread):
             if uart.in_waiting > 0:
                 bytes = uart.read(uart.in_waiting)
                 buf.extend(bytes)
-                print("received bytes len: ", len(buf))
+                print(str(self.threadID) + " received bytes len: ", len(buf))
 
                 if len(buf) >= self.FRAME_SIZE:
                     # send to data parser
