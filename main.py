@@ -75,7 +75,8 @@ class Collector (threading.Thread):
 
         # check first few elements
         print("first few bytes ", chunk[0], " ", chunk[1], " ", chunk[2], " ", chunk[3])
-
+        file = open('data_'+ str(threading.get_ident())+'.dat' , "a")
+        file.write(" ".join(str(v) for v in list(chunk)))
         # sync good
         framedata = self.bytesarray_to_floatarray(chunk)
         print(np.shape(framedata))
@@ -115,7 +116,7 @@ class Collector (threading.Thread):
     def run(self):
         uart_port = serial.Serial(self.uart_port, baudrate=self.uart_port_baudrate, timeout=self.uart_port_timeout)
         data_port = serial.Serial(self.data_port, baudrate=self.data_port_baudrate, timeout=self.data_port_timeout)
-        cmds = self.read_configure("config.cfg")
+        cmds = self.read_configure("profile3.cfg")
         self.write_cmds(uart_port, cmds)
         self.read_data(data_port)
 
