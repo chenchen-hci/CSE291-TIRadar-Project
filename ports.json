@@ -1,26 +1,29 @@
 {
   "1": {
+    "id": "node_1",
     "data": {
-        "port": "COM3",
+        "port": "/dev/ttyACM3",
         "baudrate": 921600,
         "timeout" : 0.3
     },
     "uart": {
-        "port": "COM4",
+        "port": "/dev/ttyACM2",
         "baudrate": 115200,
         "timeout" : 0
     }
   },
+
   "2": {
+    "id": "node_2",
     "data": {
-        "port": "COM16",
+        "port": "/dev/ttyACM1",
         "baudrate": 921600,
         "timeout" : 0.3
     },
     "uart": {
-        "port": "COM15",
+        "port": "/dev/ttyACM0",
         "baudrate": 115200,
         "timeout" : 0
     }
-  }  
+  }
 }
